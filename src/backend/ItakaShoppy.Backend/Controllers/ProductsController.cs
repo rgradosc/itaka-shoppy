@@ -15,6 +15,7 @@ namespace ItakaShoppy.Backend.Controllers
             _productApplication = productApplication;
         }
 
+        [HttpPost]
         public async Task<IActionResult> InsertAsync([FromBody] CreateProductDTO createDTO)
         {
             if (createDTO == null)

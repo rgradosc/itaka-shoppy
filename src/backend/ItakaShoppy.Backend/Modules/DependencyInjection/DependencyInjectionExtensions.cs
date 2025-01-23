@@ -26,6 +26,11 @@ namespace ItakaShoppy.Backend.Modules.DependencyInjection
 
             services.AddScoped<IProductRepository, ProductRepository>();
 
+            services.AddScoped<IOrderApplication, OrderApplication>();
+
+            services.AddScoped<IOrderDomain, OrderDomain>();
+
+            services.AddScoped<IOrderRepository, OrderRepository>();
             return services;
         }
     }
